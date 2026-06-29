@@ -4,7 +4,7 @@
  * Kept: Hero → Marquee → Services → FeaturedProject → Work(preview) → Process → Testimonials → Enquiry → CTA
  */
 import Hero from '../components/sections/Hero'
-import MarqueeBand from '../components/sections/MarqueeBand'
+//import MarqueeBand from '../components/sections/MarqueeBand'
 import FeaturedProject from '../components/sections/FeaturedProject'
 import Work from '../components/sections/Work'
 import Process from '../components/sections/Process'
@@ -16,7 +16,7 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
-      <MarqueeBand />
+      {/* <MarqueeBand /> */}
       <FeaturedProject />
       {/* Preview mode: shows 3 cards + "View all projects" → /projects */}
       <Work preview={true} showFilter={false} />

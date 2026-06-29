@@ -14,6 +14,7 @@ const otherLinks = [
   { label: 'Home',      href: '/',               type: 'page' },
   { label: 'Projects',  href: '/projects',       type: 'page' },
   { label: 'About',     href: '/about',          type: 'page' },
+  { label: 'Contact',   href: '/contact',        type: 'page' },
 ]
 
 export default function Navbar() {
@@ -140,7 +141,7 @@ export default function Navbar() {
 
           {/* CTA + availability + hamburger */}
           <div className="flex items-center gap-3">
-            <button onClick={() => { setMenuOpen(false); navigate('/'); setTimeout(() => document.querySelector('#enquiry')?.scrollIntoView({ behavior: 'smooth' }), isHome ? 0 : 500) }}
+            <button onClick={() => { setMenuOpen(false); navigate('/Contact');  }}
               className="hidden md:flex btn-outline-gold"
               style={{ padding: '0.55rem 1.3rem', fontSize: '0.7rem' }}>
               Begin a project

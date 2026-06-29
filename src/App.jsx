@@ -4,15 +4,16 @@ import './App.css'
 
 // Layout
 import CustomCursor from './components/common/CustomCursor'
-import Loader       from './components/common/Loader'
-import Navbar       from './components/common/Navbar'
-import Footer       from './components/common/Footer'
-import WhatsAppFAB  from './components/common/WhatsAppFAB'
+import Loader from './components/common/Loader'
+import Navbar from './components/common/Navbar'
+import Footer from './components/common/Footer'
+import WhatsAppFAB from './components/common/WhatsAppFAB'
 
 // Pages
-import HomePage     from './pages/HomePage'
+import HomePage from './pages/HomePage'
 import ProjectsPage from './pages/ProjectsPage'
-import AboutPage    from './pages/AboutPage'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
 
 export default function App() {
   const [loaded, setLoaded] = useState(false)
@@ -37,9 +38,10 @@ export default function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/"         element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/about"    element={<AboutPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
 
       <Footer />
