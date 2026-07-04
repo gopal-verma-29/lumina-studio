@@ -35,6 +35,8 @@
 @keyframes fadeSlideUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
 @keyframes rotateSlow { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
 @keyframes progressFill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes dotPulse { 0%,100% { box-shadow: 0 0 4px rgba(200,169,109,0.5); } 50% { box-shadow: 0 0 10px rgba(200,169,109,0.9), 0 0 18px rgba(200,169,109,0.3); } }
+@keyframes blobDrift { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(2%,1.5%) scale(1.03); } 66% { transform: translate(-1.5%,2%) scale(0.98); } }
 
 @layer base {
   html { scroll-behavior: smooth; overflow-x: hidden; }
